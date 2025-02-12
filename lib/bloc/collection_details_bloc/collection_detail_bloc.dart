@@ -16,7 +16,6 @@ class CollectionDetailBloc
       try {
         final String response = await rootBundle
             .loadString('assets/mockup_json/collection_details.json');
-        print("Raw JSON Content: $response");
         final Map<String, dynamic> jsonData = jsonDecode(response);
         final CollectionDetail collectionDetail =
             CollectionDetail.fromJson(jsonData);

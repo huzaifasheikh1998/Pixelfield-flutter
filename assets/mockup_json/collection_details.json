@@ -1,7 +1,8 @@
 {
-    "id": "250A",
-    "name": "Talisker 18 Year old",
-    "imageUrl": "https://raw.githubusercontent.com/huzaifasheikh1998/Pixelfield-flutter/master/assets/images/bottle.png",
+    "id": "2504",
+    "name": "Talisker",
+    "old": "18 Year old",
+    "imageUrl": "https://raw.githubusercontent.com/huzaifasheikh1998/Pixelfield-flutter/master/assets/images/bottle-big.png",
     "detail": {
         "category": "Whisky",
         "country": "Scotland",
@@ -17,5 +18,5 @@
         "palate": "Smooth and smoky with a balance of sweetness.",
         "finish": "Long-lasting and warming with oak notes."
     },
-    "history": "Talisker 18 Year Old is a celebrated whisky from the famous distillery on the Isle of Skye. Launched in 2004, it quickly gained acclaim for its balance of peat, spice, and fruit notes. It has won multiple awards, making it one of the finest aged expressions from Talisker."
+    "history": "Talisker 18 Year Old is a celebrated whisky from the famous distillery on the Isle of Skye."
 }

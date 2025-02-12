@@ -1,6 +1,7 @@
 class CollectionDetail {
   final String id;
   final String name;
+  final String old;
   final String imageUrl;
   final Map<String, String> detail;
   final Map<String, String> tastingNotes;
@@ -9,6 +10,7 @@ class CollectionDetail {
   CollectionDetail({
     required this.id,
     required this.name,
+    required this.old,
     required this.imageUrl,
     required this.detail,
     required this.tastingNotes,
@@ -19,6 +21,7 @@ class CollectionDetail {
     return CollectionDetail(
       id: json['id'],
       name: json['name'],
+      old: json['old'],
       imageUrl: json['imageUrl'],
       detail: Map<String, String>.from(json['detail']),
       tastingNotes: Map<String, String>.from(json['tastingNotes']),

@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 class AppColors {
   static const black = Colors.black;
   static const cardBg = Color(0xff122329);
+  static const card = Color(0xff0B1519);
   static const lightText = Color(0xffD7D5D1);
   static const primary = Color(0xffD49A00);
   static const screenBg = Color(0xff0E1C21);
