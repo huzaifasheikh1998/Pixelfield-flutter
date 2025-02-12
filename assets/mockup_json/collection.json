@@ -4,13 +4,27 @@
         "year": 1992,
         "id": "1234",
         "available": "112/158",
-        "imageUrl": "assets/images/bottle.png"
+        "imageUrl": "https://raw.githubusercontent.com/huzaifasheikh1998/Pixelfield-flutter/master/assets/images/bottle.png"
     },
     {
         "name": "Springbank 1992 #1234",
         "year": 1992,
         "id": "1234",
         "available": "112/158",
-        "imageUrl": "assets/images/bottle.png"
+        "imageUrl": "https://raw.githubusercontent.com/huzaifasheikh1998/Pixelfield-flutter/master/assets/images/bottle.png"
+    },
+    {
+        "name": "Springbank 1992 #1234",
+        "year": 1992,
+        "id": "1234",
+        "available": "112/158",
+        "imageUrl": "https://raw.githubusercontent.com/huzaifasheikh1998/Pixelfield-flutter/master/assets/images/bottle.png"
+    },
+    {
+        "name": "Springbank 1992 #1234",
+        "year": 1992,
+        "id": "1234",
+        "available": "112/158",
+        "imageUrl": "https://raw.githubusercontent.com/huzaifasheikh1998/Pixelfield-flutter/master/assets/images/bottle.png"
     }
 ]

@@ -9,6 +9,7 @@ import 'package:pixelfield/core/components/app_textstyle.dart';
 import 'package:pixelfield/core/components/content.dart';
 import 'package:pixelfield/core/constants/app_assets.dart';
 import 'package:pixelfield/core/constants/app_colors.dart';
+import 'package:pixelfield/presentation/dashboard/collection_details_screen.dart';
 
 class CollectionScreen extends StatelessWidget {
   const CollectionScreen({super.key});
@@ -50,22 +51,45 @@ class CollectionScreen extends StatelessWidget {
                   crossAxisCount: 2,
                   crossAxisSpacing: 10,
                   mainAxisSpacing: 10,
-                  childAspectRatio: 0.7,
+                  childAspectRatio: 0.62,
                 ),
                 itemCount: state.items.length,
                 itemBuilder: (context, index) {
                   final item = state.items[index];
-                  return Card(
-                    color: Colors.black,
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      children: [
-                        Image.network(item.imageUrl, height: 120),
-                        SizedBox(height: 10),
-                        Text(item.name, style: TextStyle(color: Colors.white)),
-                        Text("(${item.available})",
-                            style: TextStyle(color: Colors.grey)),
-                      ],
+                  return GestureDetector(
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => CollectionDetailScreen(),
+                        ),
+                      );
+                    },
+                    child: Container(
+                      padding: EdgeInsets.symmetric(
+                        horizontal: 16.w,
+                        vertical: 16.h,
+                      ),
+                      color: AppColors.cardBg,
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Center(
+                            child: Image.network(item.imageUrl, height: 120),
+                          ),
+                          15.verticalSpace,
+                          Content(
+                              data: item.name,
+                              style: AppTextSyle.displayMedium),
+                          5.verticalSpace,
+                          Content(
+                            data: "(${item.available})",
+                            style: AppTextSyle.displayTiny.copyWith(
+                              color: AppColors.lightText,
+                            ),
+                          ),
+                        ],
+                      ),
                     ),
                   );
                 },
