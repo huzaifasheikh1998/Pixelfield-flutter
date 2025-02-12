@@ -1,16 +1,33 @@
-# pixelfield
+📦 Dependencies & Usage in the Project
 
-A new Flutter project.
+1️⃣ flutter_bloc (^9.0.0)
+Purpose: Provides state management using the BLoC (Business Logic Component) pattern.
+Usage: Manages authentication, data fetching, and UI state transitions efficiently.
 
-## Getting Started
+2️⃣ flutter_screenutil (^5.9.3)
+Purpose: Ensures a responsive UI across different screen sizes.
+Usage: Dynamically adjusts layout, font sizes, and paddings based on screen dimensions.
 
-This project is a starting point for a Flutter application.
+3️⃣ flutter_svg (^2.0.17)
+Purpose: Enables rendering of SVG images in Flutter.
+Usage: Displays vector icons, logos, and scalable UI elements without losing quality.
 
-A few resources to get you started if this is your first Flutter project:
+4️⃣ fluttertoast (^8.2.12)
+Purpose: Shows short pop-up notifications (toast messages) for user feedback.
+Usage: Displays success, error, and informational messages in the app.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+5️⃣ connectivity_plus (^6.1.3)
+Purpose: Checks the device's internet connection status.
+Usage: Ensures data fetching happens only when online and manages offline handling.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+6️⃣ hive (^2.2.3)
+Purpose: Provides a lightweight, NoSQL database for local storage.
+Usage: Caches collection details for offline access when no internet is available.
+
+7️⃣ hive_flutter (^1.1.0)
+Purpose: A Flutter adapter for Hive database to make integration easier.
+Usage: Manages persistent data storage efficiently within the app.
+
+8️⃣ path_provider (^2.1.5)
+Purpose: Retrieves file system paths for storing app-related data.
+Usage: Stores Hive database files and user data in the correct system directories.
