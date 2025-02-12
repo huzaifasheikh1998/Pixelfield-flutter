@@ -11,6 +11,11 @@ class CollectionDetailLoaded extends CollectionDetailState {
   CollectionDetailLoaded({required this.collectionDetail});
 }
 
+class CollectionDetailFiltered extends CollectionDetailState {
+  final List<MapEntry<String, String>> filteredDetails;
+  CollectionDetailFiltered({required this.filteredDetails});
+}
+
 class CollectionDetailError extends CollectionDetailState {
   final String message;
   CollectionDetailError({required this.message});
