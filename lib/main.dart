@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:pixelfield/bloc/auth_bloc/auth_bloc.dart';
+import 'package:pixelfield/bloc/collection_bloc/collection_bloc.dart';
 import 'package:pixelfield/core/constants/app_colors.dart';
 import 'package:pixelfield/presentation/onboarding/splash_screen.dart';
 
@@ -16,20 +19,26 @@ class MyApp extends StatelessWidget {
     return ScreenUtilInit(
       designSize: Size(375, 812),
       builder: (context, child) {
-        return MaterialApp(
-          title: 'Pixelfield Demo',
-          debugShowCheckedModeBanner: false,
-          theme: ThemeData(
-            fontFamily: "EB Garamond",
-            scaffoldBackgroundColor: AppColors.transparent,
-            colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-            useMaterial3: true,
-            textSelectionTheme: TextSelectionThemeData(
-              selectionHandleColor: AppColors.primary,
-              cursorColor: AppColors.primary,
+        return MultiBlocProvider(
+          providers: [
+            BlocProvider<AuthBloc>(create: (context) => AuthBloc()),
+            BlocProvider<CollectionBloc>(create: (context) => CollectionBloc()),
+          ],
+          child: MaterialApp(
+            title: 'Pixelfield Demo',
+            debugShowCheckedModeBanner: false,
+            theme: ThemeData(
+              fontFamily: "EB Garamond",
+              scaffoldBackgroundColor: AppColors.transparent,
+              colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+              useMaterial3: true,
+              textSelectionTheme: TextSelectionThemeData(
+                selectionHandleColor: AppColors.primary,
+                cursorColor: AppColors.primary,
+              ),
             ),
+            home: const SplashScreen(),
           ),
-          home: const SplashScreen(),
         );
       },
     );

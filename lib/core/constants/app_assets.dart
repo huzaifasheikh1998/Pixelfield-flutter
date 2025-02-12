@@ -7,7 +7,8 @@ class AppAssets {
   //******* Icons *******
   static const hideIcon = "${iconsPath}hide.svg";
   static const visibleIcon = "${iconsPath}visible.svg";
-  
+  static const notificationIcon = "${iconsPath}icon-button-notification.svg";
+
   //******* Images *******
   static const screenBg = "${imagesPath}screen-bg.png";
 
